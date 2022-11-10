@@ -1,7 +1,7 @@
 #include "mbed.h"
 #include "HEPTA_CDH.h"
  
-RawSerial pc(USBTX,USBRX);
+RawSerial pc(USBTX,USBRX,9600);
 HEPTA_CDH cdh(p5, p6, p7, p8, "sd");
  
 int main()
